@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Merienda", system-ui;
+}
+
+body {
+  background: #000;   /* full black background */
+  color: #fff;
+  overflow-x: hidden;
+}
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 12px 25px;
+  background: rgba(15, 15, 15, 0.75);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 2;
+}
+
+.logo {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 1.5rem;
+  color: #ffffff;
+  font-weight: 600;
+}
+.nav-links a {
+    position: relative;
+  margin-left: 28px;
+  color: #ccc;
+  text-decoration: none;
+  font-size: 1.05rem;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #ff2e63; /* accent */
+}
+
+.nav-links a span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  border-bottom: 3px solid #ff2e63;
+  border-radius: 25px;
+  transform: scale(0) translateY(50px);
+  opacity: 0;
+  transition: .3s;
+}
+
+.nav-links a:hover span {
+  transform: scale(1) translateY(7px);
+  opacity: 1;
+}
+
+
+/* Section Title */
+h1 {
+  font-size: 2.4rem;
+  color: #fff;
+  margin-top: 100px; /* offset navbar */
+  text-align: center;
+  margin-bottom: 50px;
+    font-family: 'Merienda', cursive;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+h1 span {
+  color: #ff2e63;
+}
+
+p.subtitle {
+  font-size: 1.1rem;
+  color: #aaa;
+  text-align: center;
+  margin: 15px auto 50px;
+  max-width: 700px;
+}
+
+.design-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 28px;
+  justify-items: center;
+  margin: 0 auto 60px;
+  max-width: 1200px;
+  padding: 0 20px;
+}
+.design-card a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Individual Card */
+.design-card {
+  background: #111;  /* darker than bg for contrast */;
+  padding: 18px;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 46, 99, 0.25);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.6);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%; /* now responsive */
+  max-width: 280px;
+  text-align: center;
+  cursor: pointer;
+}
+
+/* Images with fixed aspect ratio */
+.design-card img {
+  width: 100%;
+  aspect-ratio: 1 / 1;   /* makes all images square */
+  object-fit: cover;     /* crops instead of stretching */
+  border-radius: 10px;
+  margin-bottom: 12px;
+  border: 1px solid #222;
+}
+.design-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(255, 46, 99, 0.45);
+}
+.design-card:hover img {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+/* Titles */
+.design-card h3 {
+  font-size: 1.2rem;
+  margin-top: 8px;
+  color: #fff;
+  font-weight: 600;
+}
+
+.project-link {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block; /* makes the whole card clickable */
+}
+
+.project-link h3 {
+  text-decoration: none;
+  color: #f8f8f8; /* your theme color */
+}
+
+.project-link:hover h3 {
+  color: #ff4b6e; /* matches your theme pink */
+  transition: color 0.3s ease;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  margin-top: 22px;
+  padding: 10px 22px;
+  background: linear-gradient(135deg, #ff2e63, #ff4b6e);
+  color: #fff;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: linear-gradient(135deg, #ff4b6e, #ff2e63);
+  box-shadow: 0 0 12px rgba(255, 46, 99, 0.7);
+}
