@@ -1,10 +1,11 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tamanna Bhatt</title>
-  <link rel="stylesheet" href="stylenew.css">
+  <link rel="stylesheet" href="styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&family=Sofadi+One&display=swap" rel="stylesheet">
@@ -14,203 +15,625 @@
   <!-- Header/Navbar -->
   <header class="navbar">
     <div class="logo">
-      <span>Portfolio</span>
+      <span>TB</span>
     </div>
+    <div class="menu-toggle">☰</div>
     <nav class="nav-links">
       <a href="#home">Home<span></span></a>
       <a href="#about">About<span></span></a>
       <a href="#projects">Projects<span></span></a>
+      <a href="#experience">Experience<span></span></a>
       <a href="#certificates">Certificates<span></span></a>
       <a href="#contact">Contact<span></span></a>
     </nav>
   </header>
 
   <!-- Home Section -->
-  <section id="home" class="home">
-    <video autoplay loop muted playsinline class="back-video">
-      <source src="assests/91562-629172467.mp4" type="video/mp4">
-    </video>
-    <div class="home-content">
-      <h4>Hello, My Name is</h4>
-      <h1>Tamanna Bhatt</h1>
-      <h3>Let's Create Something New</h3>
-      <a href="assests/tamanna resume.pdf" class="btn">Download CV</a>
-      <a href="#contact" class="btn">Contact Me</a>
+<section id="home" class="home">
+
+  <div class="home-content">
+    <h4 class="intro-text">Hello, my name is</h4>
+
+    <h1 class="hero-name">
+      Tamanna <span>Bhatt</span>
+    </h1>
+
+    <h2 class="hero-headline">
+      Building intelligent systems with purpose and precision
+    </h2>
+
+    <p class="hero-desc">
+      Computer Science undergraduate skilled in AI, full-stack development, and cloud technologies
+      building thoughtful, people focused digital experiences.
+    </p>
+
+    <div class="hero-actions">
+      <a href="assets/tamanna resume.pdf" class="btn primary">Download CV</a>
+      <a href="#contact" class="btn secondary">Contact Me</a>
     </div>
-  </section>
+
+  </div>
+
+  <!-- Background orbs -->
+  <div class="orb orb-purple"></div>
+  <div class="orb orb-yellow"></div>
+  <div class="orb orb-dark"></div>
+
+</section>
 
   <!-- About Section -->
-  <section id="about" class="about">
-    <div class="main">
-      <img src="assests/IMG_9600.JPG" alt="Tamanna Bhatt" class="profile-img">
-      <div class="about-text">
-        <h2>About Me</h2>
-        <h5>Developer & <span>Designer </span></h5>
-        <p>
-         Hi, I'm Tamanna Bhatt, a Computer Science undergraduate at Uttarakhand Technical University with a strong mix of technical skills and creativity.
-I have hands-on experience in content writing, HR consulting, and research writing, blending analytical thinking with engaging storytelling.
-Through internships and job simulations with Tata Group, Lloyds Banking Group, and AWS, I’ve explored AI-driven analytics, UX design, and cloud architecture—solving problems, extracting insights, and creating user-friendly solutions.
-Skilled in HTML, CSS, digital marketing, data analysis, and content creation, I bring a balanced approach to functionality, user experience, and communication.
-I’m always ready to learn, collaborate, and contribute to innovative, people-focused projects. </p>
-        <a href="#contact" class="button">Let's Talk</a>
+<section id="about" class="about">
+  <div class="main">
+
+    <div class="about-text">
+    <h2 class="section-heading">
+  About <span>Me</span>
+</h2>
+
+      <h5>Computer Science Undergraduate & <span>Creative Technologist</span></h5>
+
+      <p>
+        I’m Tamanna Bhatt, a Computer Science undergraduate at Uttarakhand Technical University,
+        focused on building meaningful digital products that balance functionality, usability,
+        and clear communication.
+      </p>
+
+      <p>
+        I’ve worked across web development, browser extensions, UI/UX design, and cloud fundamentals,
+        applying computer science concepts to real-world problems through projects and internships.
+      </p>
+
+      <!-- ABOUT CONTENT -->
+      <div class="about-content">
+
+        <!-- HIGHLIGHT CARDS -->
+        <div class="about-highlights">
+
+          <!-- CARD 1 -->
+          <div class="highlight-card">
+            <div class="card-front">
+              <h4>Industry Exposure</h4>
+              <p>
+                Completed GenAI Analytics, UX Design, and Cloud Architecture simulations
+                with <strong>Tata Group</strong>, <strong>Lloyds Banking Group</strong>,
+                and <strong>AWS</strong>.
+              </p>
+            </div>
+
+            <div class="card-proof">
+              <ul>
+                <li>Tata iQ – GenAI Powered Data Analytics</li>
+                <li>Lloyds Banking Group – UX Design Simulation</li>
+                <li>AWS – Solutions Architecture Job Simulation</li>
+              </ul>
+              <span class="proof">Forage Certified • 2025</span>
+            </div>
+          </div>
+
+          <!-- CARD 2 -->
+          <div class="highlight-card">
+            <div class="card-front">
+              <h4>Project-Based Learning</h4>
+              <p>
+                Built <strong>MisinfoX</strong>, an AI-assisted browser extension and
+                a location-based web app that reduced decision time by <strong>60%</strong>.
+              </p>
+            </div>
+
+            <div class="card-proof">
+              <ul>
+                <li>Developed MisinfoX using Chrome & Web APIs</li>
+                <li>Real-time content analysis & alerts</li>
+                <li>AAO-LO location-based decision support</li>
+              </ul>
+              <span class="proof">JavaScript • Browser APIs • UX</span>
+            </div>
+          </div>
+
+          <!-- CARD 3 -->
+          <div class="highlight-card">
+            <div class="card-front">
+              <h4>Leadership & Impact</h4>
+              <p>
+                Vice President, Social Media Club. Class Representative for
+                <strong>75+</strong> students.
+              </p>
+            </div>
+
+            <div class="card-proof">
+              <ul>
+                <li>Vice President – Social Media Club</li>
+                <li>Anchored events & hackathon participant</li>
+                <li>Class Representative for 75+ students</li>
+              </ul>
+              <span class="proof">Leadership • Communication • Strategy</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- EDUCATION (SAME WIDTH AS 3 CARDS) -->
+        <div class="about-education">
+
+          <div class="edu-item">
+            <h4>Education</h4>
+            <p>
+              <strong>B.Tech in Computer Science & Engineering</strong><br>
+              Uttarakhand Technical University <span>(2023–Present)</span>
+            </p>
+          </div>
+
+          <div class="edu-item">
+            <h4>Core Coursework</h4>
+            <p>
+              Data Structures & Algorithms · DBMS · OOPs · Software Engineering ·
+              Compiler Design · Web Development
+            </p>
+          </div>
+
+          <!-- TAGS INSIDE EDUCATION -->
+          <div class="about-credibility">
+            <span>CSE Undergraduate</span>
+            <span>Web & UI Focused</span>
+            <span>Industry Simulations</span>
+          </div>
+
+        </div>
+
       </div>
-    </div>
-  </section>
-  
-<section id="experience" class="experience">
-  <video autoplay loop muted playsinline class="experience-bg">
-    <source src="assests/white fox.mp4" type="video/mp4">
-  </video>
-  <h2 class="section-title">Experience & Trainings</h2>
+    <div class="about-cta">
+  <a href="#contact" class="button">Let’s Talk</a>
+</div>
+
+
+  </div>
+</section>
+
+<!-- Experience Section -->
+ <section id="experience" class="experience">
+  <h2 class="section-heading">
+    Technical <span>Experience & Training</span>
+  </h2>
 
   <div class="timeline">
 
+    <!-- CORE TECH EXPERIENCE -->
     <div class="timeline-item">
       <div class="timeline-dot"></div>
       <div class="timeline-content">
-        <h3>Content Writing Intern</h3>
-        <span>Hamari Pehchan | Jun 2022 – Aug 2022</span>
-        <p>Created impactful written content, articles, and blogs for social causes while refining storytelling and communication skills.</p>
+        <h3>AI & Web Development Projects</h3>
+        <span>Self-Directed | 2023 – Present</span>
+        <p>
+          Designed and developed real-world web and AI-based projects including an
+          AI-powered browser extension and a location-based restaurant discovery platform.
+          Worked extensively with JavaScript, browser APIs, responsive UI design,
+          content analysis, and user-focused problem solving.
+        </p>
       </div>
     </div>
 
+    <!-- VIRTUAL TECH EXPERIENCE -->
     <div class="timeline-item">
       <div class="timeline-dot"></div>
       <div class="timeline-content">
-        <h3>HR Consultant Intern</h3>
-        <span>Jobs India Consultancy | Apr 2022 – May 2022</span>
-        <p>Assisted in candidate sourcing, HR processes, and recruitment strategies in a consultancy environment.</p>
+        <h3>Virtual Technical Experience Programs</h3>
+        <span>Tata Group • Lloyds Banking • AWS | Jul 2025</span>
+        <p>
+          Completed industry-aligned virtual experience programs focused on
+          applied technology and problem-solving:
+          <br><br>
+          • <strong>Tata Group – GenAI Data Analytics:</strong> Built Python-based prediction models
+          and explored ethical considerations in AI systems.<br>
+          • <strong>Lloyds Banking – UX Design:</strong> Conducted UX analysis and proposed
+          user experience improvements based on user behavior and usability principles.<br>
+          • <strong>AWS – Solutions Architecture:</strong> Designed basic scalable cloud architecture
+          concepts and understood cloud service fundamentals.
+        </p>
       </div>
     </div>
 
-    <!-- 3 -->
+    <!-- FORMAL TRAINING -->
     <div class="timeline-item">
       <div class="timeline-dot"></div>
       <div class="timeline-content">
-        <h3>Research Writer Intern</h3>
-        <span>Youthopia | May 2021 – Aug 2021</span>
-        <p>Researched and wrote analytical pieces on youth-related issues, combining data insights with engaging writing.</p>
+        <h3>AI, Cloud & Web Development Training</h3>
+        <span>Coursera • GUVI (IIT Madras) • freeCodeCamp</span>
+        <p>
+          Gained hands-on exposure to Python, AI fundamentals, cloud concepts,
+          responsive web design, and modern development practices through
+          structured coursework and guided projects.
+        </p>
       </div>
     </div>
 
-    <!-- Trainings -->
+    <!-- INTERNSHIPS (TRANSFERABLE BUT RELEVANT) -->
     <div class="timeline-item">
       <div class="timeline-dot"></div>
       <div class="timeline-content">
-        <h3>AI For Everyone</h3>
-        <span>Coursera (Andrew Ng) | Completed</span>
-        <p>Foundational AI concepts and real-world applications.</p>
+        <h3>Professional Internships (Transferable Skills)</h3>
+        <span>Hamari Pehchan NGO • Jobs India Consultancy • Youthopia | 2021 – 2022</span>
+        <p>
+          Developed strong communication, research, and analytical skills through
+          multiple internships:
+          <br><br>
+          • <strong>Content Writer – Hamari Pehchan NGO:</strong> Created structured content
+          on social impact topics, improving clarity and documentation skills.<br>
+          • <strong>HR Consultant – Jobs India Consultancy:</strong> Assisted in candidate screening
+          for technical roles, gaining exposure to hiring expectations in tech.<br>
+          • <strong>Research Writer – Youthopia:</strong> Contributed research-based articles,
+          strengthening analytical thinking and structured problem articulation.
+        </p>
       </div>
     </div>
 
-    <div class="timeline-item">
-      <div class="timeline-dot"></div>
-      <div class="timeline-content">
-        <h3>AI For India 2.0</h3>
-        <span>GUVI – IIT Madras | Completed</span>
-        <p>Explored AI concepts, Python basics, and ML applications.</p>
-      </div>
-    </div>
-
-    <div class="timeline-item">
-      <div class="timeline-dot"></div>
-      <div class="timeline-content">
-        <h3>Responsive Web Design</h3>
-        <span>freeCodeCamp | Completed</span>
-        <p>HTML, CSS, and responsive layout practice via projects.</p>
-      </div>
-    </div>
   </div>
 </section>
+
 
 <!-- Projects Section -->
 <section id="projects" class="projects">
   <div class="projects-header">
-    <h2>Drive into creativity with my <span>Projects</span></h2>
+    <h2 class="projects-title">
+      Things I’ve <span>Built</span>
+    </h2>
+
     <p>
-      Explore my curated project collection, featuring captivating works from 
-      development, design, and creativity. Each project reflects skills in 
-      problem-solving, innovation, and storytelling through code.
+      A selection of projects where ideas turned into real, usable experiences.
+      Each one reflects my approach to problem-solving, system thinking,
+      and building practical solutions with code.
     </p>
-    <a href="graphic-design.html" class="btn explore-btn">Explore Projects</a>
+
+    <a href="https://github.com/Tamanna-3" class="btn explore-btn">View All Work</a>
   </div>
 
   <div class="projects-gallery">
-    <div class="project-card">
-      <a href="#home" target="_blank">
-      <img src="assests/image.png" alt="Project 1">
-      <h3>Portfolio Website</h3>
-      </a>
+ <!-- 1. MISINFOX -->
+    <div class="project-card" data-project="misinfox">
+  <img src="assets/img/misinfox.png" alt="MisinfoX Browser Extension">
+
+  <div class="project-overlay">
+    <div>
+      <h3>MisinfoX</h3>
+      <ul>
+        <li>Detects misinformation in real time</li>
+        <li>Scans web content using Chrome APIs</li>
+        <li>Flags misleading claims instantly</li>
+      </ul>
     </div>
-    <div class="project-card">
-      <a href="#home" target="_blank">
-      <img src="assests/Screenshot (166).png" alt="Project 3">
-      <h3>AAO LO</h3>
-      </a>
-    </div>
-    <div class="project-card">
-       <a href="graphic-design.html" target="_blank">
-      <img src="assests/WhatsApp Image 2025-07-23 at 11.21.08 AM (2).jpeg" alt="Project 5">
-      <h3>Graphic Designs</h3>
-      </a>
+
+    <div class="project-actions">
+      <a href="https://github.com/Tamanna-3/MisinfoX-Chrome-Extension" target="_blank">GitHub</a>
+      <a href="https://tamanna-3.github.io/MisinfoX/" target="_blank">Live</a>
+      <button class="open-modal">View Details</button>
     </div>
   </div>
+</div>
+<div class="project-card" data-project="aao-lo">
+  <img src="assets/img/aaolo.png" alt="AAO-LO Project">
+
+  <div class="project-overlay">
+    <div>
+      <h3>AAO-LO</h3>
+      <ul>
+        <li>Location-based decision support</li>
+        <li>Reduces user decision time</li>
+        <li>Clean UX with API integration</li>
+      </ul>
+    </div>
+
+    <div class="project-actions">
+      <a href="https://github.com/yourusername/aao-lo" target="_blank">GitHub</a>
+      <button class="open-modal">View Details</button>
+    </div>
+  </div>
+</div>
+
+<div class="project-card" data-project="portfolio">
+  <img src="assets/img/portfolio.png" alt="Portfolio Website">
+
+  <div class="project-overlay">
+    <div>
+      <h3>Personal Portfolio</h3>
+      <ul>
+        <li>Responsive personal website</li>
+        <li>Showcases projects & skills</li>
+        <li>Modern UI with animations</li>
+      </ul>
+    </div>
+
+    <div class="project-actions">
+      <a href="https://github.com/yourusername/portfolio" target="_blank">GitHub</a>
+      <a href="#" target="_blank">Live</a>
+      <button class="open-modal">View Details</button>
+    </div>
+  </div>
+</div>
+  </div>
+<!-- ===== PROJECT DETAILS (HIDDEN) ===== -->
+
+<div id="misinfox-details" class="project-details" hidden>
+
+  <!-- TITLE -->
+  <h2 class="modal-title">
+  <span class="brand-text">MisinfoX</span>
+</h2>
+  <p class="modal-subtitle">
+    AI-powered browser extension for real-time misinformation, scam & phishing detection
+  </p>
+
+  <!-- DESCRIPTION -->
+  <p class="modal-description">
+    MisinfoX is an AI-assisted browser extension designed to help users verify online
+    information instantly. When the extension is enabled, users can highlight any text
+    on a webpage and select <strong>“Ask MisinfoX”</strong>.
+    <br><br>
+    The system analyzes the selected content using browser APIs and content analysis
+    techniques to determine whether the information is misinformation, a scam,
+    phishing attempt, or misleading content, and provides a clear risk verdict.
+  </p>
+
+  <!-- HOW IT WORKS -->
+  <h3 class="modal-section-title">How it works</h3>
+
+  <div class="modal-gallery">
+
+    <div class="modal-image-card">
+      <span>1. Enable Extension</span>
+      <img src="assets/img/extension tool.png" alt="MisinfoX Extension Panel">
+    </div>
+
+    <div class="modal-image-card">
+      <span>2. Highlight Suspicious Text</span>
+      <img src="assets/img/highlight.png" alt="Highlight Text Feature">
+    </div>
+
+    <div class="modal-image-card">
+      <span>3. Ask MisinfoX</span>
+      <img src="assets/img/ask.png" alt="Ask MisinfoX Button">
+    </div>
+
+    <div class="modal-image-card">
+      <span>4. AI Analysis & Risk Verdict</span>
+      <img src="assets/img/new.png" alt="MisinfoX Analysis Result">
+    </div>
+
+  </div>
+
+  <!-- LINKS -->
+  <a data-github href="https://github.com/Tamanna-3/MisinfoX-Chrome-Extension"></a>
+  <a data-live href="https://tamanna-3.github.io/MisinfoX/"></a>
+
+</div>
+
+<div id="aao-lo-details" class="project-details" hidden>
+
+  <!-- TITLE -->
+  <h2 class="modal-title">
+    <span class="brand-text">AAO-LO</span>
+  </h2>
+  <p class="modal-subtitle">
+    Smart restaurant discovery platform based on food preferences, budget, and who you’re going with
+  </p>
+
+  <!-- DESCRIPTION -->
+  <p class="modal-description">
+    AAO-LO is a decision-support web application designed to solve a common real-world problem:
+    choosing the right restaurant for the right people.
+    <br><br>
+    Many users end up visiting places that don’t match their group — for example, family outings at
+    couple-oriented cafés or friend meetups at quiet family restaurants. AAO-LO helps users avoid
+    this mismatch by clearly categorizing restaurants based on suitability, ambience, and budget.
+  </p>
+
+  <!-- FEATURES -->
+  <h3 class="modal-section-title">Key features</h3>
+  <ul class="modal-list">
+    <li>Restaurant discovery based on food type, budget, and location</li>
+    <li>Clear suitability tags: <strong>Family</strong>, <strong>Couples</strong>, <strong>Friends</strong>, <strong>Solo</strong></li>
+    <li>Budget indicators (₹, ₹₹, ₹₹₹) for quick decision-making</li>
+    <li>Ambience and vibe overview for each restaurant</li>
+    <li>User reviews focusing on comfort, group suitability, and experience</li>
+  </ul>
+
+  <!-- HOW IT WORKS -->
+  <h3 class="modal-section-title">How it works</h3>
+
+  <div class="modal-gallery">
+
+    <div class="modal-image-card">
+      <span>1. Select who you’re going with</span>
+      <img src="assets/img/mainaaolo.png" alt="Choose group type">
+    </div>
+
+    <div class="modal-image-card">
+      <span>2. Filter by food & budget</span>
+      <img src="assets/img/discoveryourtaste.png" alt="Food and budget filters">
+    </div>
+
+    <div class="modal-image-card">
+      <span>3. Explore suitable restaurants</span>
+      <img src="assets/img/discover.png" alt="Restaurant listings">
+    </div>
+
+    <div class="modal-image-card">
+      <span>4. Read reviews & decide confidently</span>
+      <img src="assets/img/reviewofaaolo.png" alt="Reviews and ratings">
+    </div>
+
+  </div>
+
+  <!-- TECH STACK -->
+  <h3 class="modal-section-title">Tech stack</h3>
+  <p class="modal-description">
+    HTML • CSS • JavaScript • Responsive UI Design • API Integration
+  </p>
+
+  <!-- IMPACT -->
+  <h3 class="modal-section-title">Impact</h3>
+  <p class="modal-description">
+    AAO-LO reduces user decision time by clearly presenting only relevant restaurant options,
+    improving user satisfaction and minimizing poor dining choices caused by ambience mismatch.
+  </p>
+
+  <!-- LINKS -->
+  <a data-github href="https://github.com/yourusername/aao-lo"></a>
+</div>
+
+
+<div id="portfolio-details" class="project-details" hidden>
+
+  <!-- TITLE -->
+  <h2 class="modal-title">
+    <span class="brand-text">Personal Portfolio</span>
+  </h2>
+
+  <p class="modal-subtitle">
+    A modern, responsive portfolio website to showcase projects, skills, and experience
+  </p>
+
+  <!-- DESCRIPTION -->
+  <p class="modal-description">
+    This personal portfolio website is designed to present my technical work,
+    achievements, and professional journey in a clean, structured, and visually
+    engaging way.
+    <br><br>
+    Instead of overwhelming visitors with information, the portfolio focuses on
+    clarity and storytelling — highlighting projects through interactive modals,
+    clean layouts, and consistent visual hierarchy while maintaining strong
+    performance and responsiveness across devices.
+  </p>
+
+  <!-- FEATURES -->
+  <h3 class="modal-section-title">Key features</h3>
+  <ul class="modal-list">
+    <li>Clean and minimal UI focused on readability and structure</li>
+    <li>Dedicated sections for projects, experience, certifications, and contact</li>
+    <li>Interactive project modals with detailed explanations</li>
+    <li>Responsive design optimized for mobile, tablet, and desktop</li>
+    <li>Smooth hover effects and subtle animations for better UX</li>
+  </ul>
+
+  <!-- HOW IT WORKS -->
+  <h3 class="modal-section-title">How it works</h3>
+
+  <div class="modal-gallery">
+
+    <div class="modal-image-card">
+      <span>1. Professional Landing Section</span>
+      <img src="assets/img/mainpage.png" alt="Portfolio Landing Section">
+    </div>
+
+    <div class="modal-image-card">
+      <span>2. Project Showcase with Modals</span>
+      <img src="assets/img/aboutme.png" alt="Portfolio Projects Modal">
+    </div>
+
+    <div class="modal-image-card">
+      <span>3. Skills, Experience & Certifications</span>
+      <img src="assets/img/expo.png" alt="Portfolio Experience Section">
+    </div>
+
+    <div class="modal-image-card">
+      <span>4. Contact & Social Links</span>
+      <img src="assets/img/contactportfolio.png" alt="Portfolio Contact Section">
+    </div>
+
+  </div>
+
+  <!-- TECH STACK -->
+  <h3 class="modal-section-title">Tech stack</h3>
+  <p class="modal-description">
+    HTML • CSS • JavaScript • Responsive Design • UI/UX Principles
+  </p>
+
+  <!-- IMPACT -->
+  <h3 class="modal-section-title">Impact</h3>
+  <p class="modal-description">
+    The portfolio provides a clear and professional representation of my skills
+    and projects, making it easier for recruiters and collaborators to understand
+    my work, technical strengths, and design approach within a short time.
+  </p>
+
+  <!-- LINKS -->
+  <a data-github href="https://github.com/yourusername/portfolio"></a>
+  <a data-live href="https://yourportfolio.live"></a>
+
+</div>
+
+</div>
+
 </section>
+
 <!-- Certificates Section -->
 <section id="certificates" class="certificates">
-  <h2 class="section-title">Certificates</h2>
+  <h2 class="section-title">Certifi<span>cates</span></h2>
 
-  <div class="cert-container">
+  <div class="cert-grid">
 
-    <!-- Certificate Card -->
     <div class="cert-card">
-      <img src="assests/aws.png" alt="AWS Certificate">
-      <div class="cert-info">
-        <h3>AWS - Solutions Architecture Job Simulation</h3>
-        <p><strong>Forage</strong> | Issued Jul 2025</p>
-        <p>Skills: Azure DevOps Server, AWS</p>
-        <a href="assests/Certificate3.pdf" target="_blank" class="cert-btn">View Certificate</a>
-      </div>
+      <img src="assets/img/aws.png" alt="AWS Certificate">
+      <h3>AWS – Solutions Architecture Job Simulation</h3>
+      <span class="cert-issuer">Forage · Jul 2025</span>
+      <p class="cert-skills">AWS · Cloud Architecture · DevOps</p>
+      <a href="assets/pdf/Certificate3.pdf" target="_blank" class="cert-btn">
+        View Certificate
+      </a>
     </div>
 
     <div class="cert-card">
-      <img src="assets/llyods.png" alt="Lloyds Certificate">
-      <div class="cert-info">
-        <h3>Lloyds Banking Group - UX Design Job Simulation</h3>
-        <p><strong>Forage</strong> | Issued Jul 2025</p>
-        <p>Skills: Analytical Skills</p>
-        <a href="assests/Certificate2.pdf" target="_blank" class="cert-btn">View Certificate</a>
-      </div>
+      <img src="assets/img/llyods.png" alt="Lloyds Certificate">
+      <h3>Lloyds – UX Design Job Simulation</h3>
+      <span class="cert-issuer">Forage · Jul 2025</span>
+      <p class="cert-skills">UX Design · Research · Analytics</p>
+      <a href="assets/pdf/Certificate2.pdf" target="_blank" class="cert-btn">
+        View Certificate
+      </a>
     </div>
 
     <div class="cert-card">
-      <img src="assests/tata.png" alt="Tata Certificate">
-      <div class="cert-info">
-        <h3>Tata - GenAI Powered Data Analytics Job Simulation</h3>
-        <p><strong>Forage</strong> | Issued Jul 2025</p>
-        <p>Skills: AI, Generative AI, Critical Thinking</p>
-        <a href="assests/Certificate1.pdf" target="_blank" class="cert-btn">View Certificate</a>
-      </div>
+      <img src="assets/img/tata.png" alt="Tata Certificate">
+      <h3>Tata – GenAI Data Analytics</h3>
+      <span class="cert-issuer">Forage · Jul 2025</span>
+      <p class="cert-skills">AI · Generative AI · Data Analytics</p>
+      <a href="assets/pdf/Certificate1.pdf" target="_blank" class="cert-btn">
+        View Certificate
+      </a>
     </div>
 
     <div class="cert-card">
-      <img src="assests/linkedin.png" alt="Generative AI">
-      <div class="cert-info">
-        <h3>Generative AI</h3>
-        <p><strong>LinkedIn</strong> | Issued Nov 2024</p>
-        <a href="assests/Certificate4.pdf" target="_blank" class="cert-btn">View Certificate</a>
-      </div>
+      <img src="assets/img/linkedin.png" alt="Generative AI">
+      <h3>Generative AI</h3>
+      <span class="cert-issuer">LinkedIn · Nov 2024</span>
+      <p class="cert-skills">Prompt Engineering · AI Concepts</p>
+      <a href="assets/pdf/Certificate.pdf" target="_blank" class="cert-btn">
+        View Certificate
+      </a>
     </div>
 
     <div class="cert-card">
-      <img src="assests/webdev.png" alt="Web Development">
-      <div class="cert-info">
-        <h3>Web Development</h3>
-        <p><strong>Acmegrade</strong> | Issued Nov 2023</p>
-        <p>Skills: HTML, CSS, JavaScript</p>
-        <a href="assests/Certificate.pdf" target="_blank" class="cert-btn">View Certificate</a>
-      </div>
+      <img src="assets/img/webdev.png" alt="Web Development">
+      <h3>Web Development</h3>
+      <span class="cert-issuer">Acmegrade · Nov 2023</span>
+      <p class="cert-skills">HTML · CSS · JavaScript</p>
+      <a href="assets/pdf/acmegrade.png" target="_blank" class="cert-btn">
+        View Certificate
+      </a>
     </div>
+
+    <div class="cert-card">
+  <img src="assets/img/python.png" alt="Python Programming Certificate">
+  <h3>Fundamentals of Python Programming</h3>
+  <span class="cert-issuer">
+    E & ICT Academy, IIT Kanpur · Oct 2023
+  </span>
+  <p class="cert-skills">
+    Python Basics · Programming Logic · Problem Solving
+  </p>
+  <a href="assets/pdf/CourseCertificate - IFACET IITK.pdf" target="_blank" class="cert-btn">
+    View Certificate
+  </a>
+</div>
+
 
   </div>
 </section>
@@ -218,88 +641,154 @@ I’m always ready to learn, collaborate, and contribute to innovative, people-f
 <!-- Contact Section -->
 <section id="contact" class="contact">
   <div class="contact-container">
-    <h2 class="section-title">Contact Me</h2>
-    <p class="contact-subtitle">I'd love to hear from you. Please fill out this form, and we'll reply soon.</p>
-    
+    <h2 class="section-title">Contact <span>Me</span></h2>
+    <p class="contact-subtitle">
+      Have a project in mind, a question, or just want to connect?  
+      I’m always open to discussing ideas, opportunities, and collaborations.
+    </p>
+
     <div class="contact-grid">
-      <!-- Contact Methods -->
+
+      <!-- CONTACT METHODS -->
       <div class="contact-methods">
+
         <div class="contact-card">
           <div class="contact-icon">✉️</div>
           <h3>Email</h3>
-          <p>Contact me by email, and we will respond shortly.</p>
-          <a href="mailto:tam9844@gmail.com" class="contact-link">tam9844@gmail.com</a>
+          <p>
+            Reach out to me directly via email for collaborations, internships,
+            freelance work, or general inquiries.
+          </p>
+          <a href="mailto:tamannabhatt.work@gmail.com" class="contact-link">
+            tamannabhatt.work@gmail.com
+          </a>
         </div>
-      </div> 
-      
-      <!-- Contact Form -->
+
+        <div class="contact-card">
+          <div class="contact-icon">🌐</div>
+          <h3>Location</h3>
+          <p>
+            Based in India, available for remote opportunities and flexible
+            collaborations worldwide.
+          </p>
+          <span class="contact-link">India · Remote Friendly</span>
+        </div>
+
+      </div>
+
+      <!-- CONTACT FORM -->
       <form class="contact-form">
-        <h3>Write me a message</h3>
-        
+        <h3>Send me a message</h3>
+        <p class="form-subtitle">
+          Fill out the form below and I’ll get back to you as soon as possible.
+        </p>
+
         <div class="form-group">
-          <label for="name">Your name</label>
-          <input type="text" id="name" class="form-input" placeholder="Name">
+          <label for="name">Your Name</label>
+          <input
+            type="text"
+            id="name"
+            class="form-input"
+            placeholder="Enter your name"
+            required
+          >
         </div>
-        
+
         <div class="form-group">
-          <label for="email">Email</label>
-          <input type="email" id="email" class="form-input" placeholder="yourmail@gmail.com">
+          <label for="email">Email Address</label>
+          <input
+            type="email"
+            id="email"
+            class="form-input"
+            placeholder="you@example.com"
+            required
+          >
         </div>
-        
+
         <div class="form-group">
           <label for="message">Message</label>
-          <textarea id="message" class="form-input" rows="4" placeholder="Leave me a message..."></textarea>
+          <textarea
+            id="message"
+            class="form-input"
+            rows="5"
+            placeholder="Tell me about your idea, project, or question..."
+            required
+          ></textarea>
         </div>
-        
-        <div class="form-checkbox">
-          <input type="checkbox" id="privacy" required>
-          <label for="privacy">I agree to the Privacy Policy</label>
-        </div>
-        
-        <button type="submit" class="form-submit">Send Message</button>
+
+        <button type="submit" class="form-submit">
+          Send Message
+        </button>
       </form>
-    </div> 
-  </div> 
+
+      <p class="form-success" hidden>
+  Your message has been sent successfully. I’ll get back to you soon!
+</p>
+
+    </div>
+  </div>
 </section>
+
   <!-- Footer -->
-<footer>
-  <div class="footer-content">
+<footer class="footer">
+
+  <div class="footer-container">
+
+    <!-- BRAND / ABOUT -->
+    <div class="footer-brand">
+      <h3 class="footer-logo">Tamanna Bhatt</h3>
+      <p class="footer-tagline">
+        Building thoughtful digital experiences with code, design, and clarity.
+      </p>
+    </div>
+
+    <!-- QUICK LINKS -->
     <div class="footer-section">
-      <h3 class="footer-title">Quick Links</h3>
+      <h4 class="footer-title">Navigation</h4>
       <div class="footer-links">
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Projects</a>
-        <a href="#">Certificates</a>
-        <a href="#">Contact</a>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#certificates">Certificates</a>
+        <a href="#contact">Contact</a>
       </div>
     </div>
-    
+
+    <!-- CONTACT -->
     <div class="footer-section">
-      <h3 class="footer-title">Legal</h3>
+      <h4 class="footer-title">Get in touch</h4>
       <div class="footer-links">
-        <a href="#">License agreement</a>
-        <a href="#">Privacy policy</a>
-        <a href="#">Terms of use</a>
-        <a href="#">Contact us</a>
+        <a href="mailto:tamannabhatt.work@gmail.com">tamannabhatt.work@gmail.com</a>
+        <a href="https://github.com/Tamanna-3" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/tamanna-bhatt-18765222b/" target="_blank">LinkedIn</a>
       </div>
     </div>
-    
-    <div class="footer-section">
-      <h3 class="footer-title">Contact</h3>
-      <div class="footer-links">
-        <a href="mailto:tam9844@gmail.com">tam9844@gmail.com</a>
-      </div>
-    </div>
+
   </div>
-  
+
+  <!-- BOTTOM -->
   <div class="footer-bottom">
-    <p>© 2028 Copyright. All rights reserved.</p>
+    <p>© 2025 Tamanna Bhatt. Crafted with care.</p>
   </div>
+
 </footer>
 
+<!-- ===== PROJECT MODAL ===== -->
+<div id="project-modal" class="modal">
+  <div class="modal-content">
+    <span class="close-modal">&times;</span>
+
+    <h2 id="modal-title"></h2>
+    <p id="modal-description"></p>
+
+    <div id="modal-gallery" class="modal-gallery"></div>
+
+    <div class="modal-links">
+      <a id="modal-github" target="_blank" class="btn secondary">GitHub</a>
+      <a id="modal-live" target="_blank" class="btn primary">Live Demo</a>
+    </div>
+  </div>
+</div>
+<script src="main.js"></script>
 </body>
 </html>
-
-
-
