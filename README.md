@@ -1,6 +1,4 @@
-from pathlib import Path
-
-readme = """# Tamanna Bhatt — Personal Portfolio
+# Tamanna Bhatt — Personal Portfolio
 
 A responsive personal portfolio website showcasing my work across **AI, software development, automation, full-stack projects, internships, certifications, and creative technology**.
 
