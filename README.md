@@ -2,15 +2,13 @@
 
 A responsive personal portfolio website showcasing my work across **AI, software development, automation, full-stack projects, internships, certifications, and creative technology**.
 
-The portfolio blends a clean professional interface with a refined editorial / scrapbook-inspired visual style, using a blue-led palette and lightweight interactions.
-
 ## Live Website
 
 **Portfolio:** https://tamanna-3.github.io/my-portfolio/
 
 ## About
 
-I’m Tamanna Bhatt, a Computer Science Engineering student focused on building practical AI-powered products and software that solve real problems.
+I’m Tamanna Bhatt, a Computer Science Engineering student focused on building practical AI powered products and software that solve real problems.
 
 This portfolio highlights my:
 
@@ -25,7 +23,7 @@ This portfolio highlights my:
 
 ### Carevo AI — AI Career Copilot
 
-An AI-powered career platform for resume analysis, ATS insights, job analysis, skill-gap detection, career guidance, and application tracking.
+An AI-powered career platform for resume analysis, ATS insights, job analysis, skill gap detection, career guidance, and application tracking.
 
 **Tech:** React.js, FastAPI, Python, Supabase, Gemini AI, n8n
 
