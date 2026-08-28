@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="16" fill="#FFF9F2"/>
+  <path d="M10 18h44v28H10z" fill="#CDBBFF" stroke="#171717" stroke-width="2" transform="rotate(-3 32 32)"/>
+  <text x="32" y="39" text-anchor="middle" font-family="Arial,sans-serif" font-size="22" font-weight="800" fill="#20253A">TB</text>
+</svg>

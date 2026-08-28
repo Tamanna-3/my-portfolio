@@ -1,86 +1,47 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const modal = document.getElementById("project-modal");
+(() => {
+  const menuButton = document.querySelector('.menu-toggle');
+  const nav = document.querySelector('.nav-links');
 
-  const modalTitle = document.getElementById("modal-title");
-  const modalDesc = document.getElementById("modal-description");
-  const modalGallery = document.getElementById("modal-gallery");
-  const modalGithub = document.getElementById("modal-github");
-  const modalLive = document.getElementById("modal-live");
-  const closeBtn = document.querySelector(".close-modal");
-
-  document.querySelectorAll(".open-modal").forEach(button => {
-    button.addEventListener("click", () => {
-      const card = button.closest(".project-card");
-      const projectId = card.dataset.project;
-      const details = document.getElementById(`${projectId}-details`);
-
-      if (!details) return;
-
-      // ===== TITLE =====
-      modalTitle.innerHTML =
-        details.querySelector(".modal-title")?.innerHTML ||
-        details.querySelector("h2")?.innerHTML ||
-        "";
-
-      // ===== DESCRIPTION =====
-      modalDesc.innerHTML =
-        details.querySelector(".modal-description")?.innerHTML ||
-        details.querySelector("p")?.innerHTML ||
-        "";
-
-      // ===== GALLERY =====
-      modalGallery.innerHTML = "";
-
-      const imageCards = details.querySelectorAll(".modal-image-card");
-      if (imageCards.length > 0) {
-        imageCards.forEach(card => {
-          modalGallery.appendChild(card.cloneNode(true));
-        });
-      }
-
-      // ===== LINKS =====
-      const githubLink = details.querySelector("[data-github]");
-      const liveLink = details.querySelector("[data-live]");
-
-      modalGithub.href = githubLink ? githubLink.href : "#";
-      modalLive.href = liveLink ? liveLink.href : "#";
-
-      modal.classList.add("active");
+  if (menuButton && nav) {
+    menuButton.addEventListener('click', () => {
+      const isOpen = nav.classList.toggle('open');
+      menuButton.setAttribute('aria-expanded', String(isOpen));
+      menuButton.setAttribute('aria-label', isOpen ? 'Close navigation' : 'Open navigation');
     });
-  });
+    nav.querySelectorAll('a').forEach((link) => link.addEventListener('click', () => {
+      nav.classList.remove('open');
+      menuButton.setAttribute('aria-expanded', 'false');
+      menuButton.setAttribute('aria-label', 'Open navigation');
+    }));
+  }
 
-  // ===== CLOSE MODAL =====
-  closeBtn.addEventListener("click", () => {
-    modal.classList.remove("active");
-  });
+  const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const revealItems = document.querySelectorAll('.reveal');
+  if (reducedMotion || !('IntersectionObserver' in window)) {
+    revealItems.forEach((item) => item.classList.add('is-visible'));
+  } else {
+    const observer = new IntersectionObserver((entries, obs) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          obs.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px' });
+    revealItems.forEach((item) => observer.observe(item));
+  }
 
-  modal.addEventListener("click", e => {
-    if (e.target === modal) {
-      modal.classList.remove("active");
-    }
-  });
-});
-const contactForm = document.querySelector(".contact-form");
-const successMsg = document.querySelector(".form-success");
+  const roleText = document.getElementById('role-text');
+  if (roleText && !reducedMotion) {
+    const roles = ['AI Builder', 'Developer', 'Problem Solver', 'Creative Technologist'];
+    let index = 0;
+    window.setInterval(() => {
+      index = (index + 1) % roles.length;
+      roleText.animate([{ opacity: 0, transform: 'translateY(5px)' }, { opacity: 1, transform: 'translateY(0)' }], { duration: 300 });
+      roleText.textContent = roles[index];
+    }, 2300);
+  }
 
-contactForm.addEventListener("submit", function (e) {
-  e.preventDefault(); 
-  successMsg.hidden = false;
-  contactForm.reset();
-
-  // Hide message after 5 seconds (optional)
-  setTimeout(() => {
-    successMsg.hidden = true;
-  }, 5000);
-});
-const menuToggle = document.querySelector(".menu-toggle");
-const navLinks = document.querySelector(".nav-links");
-
-menuToggle.addEventListener("click", () => {
-  navLinks.classList.toggle("active");
-});
-document.querySelectorAll(".nav-links a").forEach(link => {
-  link.addEventListener("click", () => {
-    navLinks.classList.remove("active");
-  });
-});
+  const year = document.getElementById('year');
+  if (year) year.textContent = new Date().getFullYear();
+})();
